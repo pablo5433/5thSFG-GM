@@ -1,0 +1,86 @@
+SCR_MapEntity MapEntity : "{731564B66F91B107}Prefabs/World/Game/MapEntity.et" {
+ coords 6400 157.969 6404
+ "Map Geometry Data" "{545FA81CDD4BAC8A}Map_Custom_Look_Paper/GM_Training.topo"
+ "Satellite background image" "{EC4F167C86BA2970}Map_Custom_Look_Paper/GM_Training.edds"
+ {
+  CommentEntity {
+   coords 0 1 0
+   m_Comment "MapEntity: "\
+   "Set up map textures"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{661B384AD8C32EB3}" {
+     NavmeshFile "{F631D87BE891205D}TrainingEden/TRAIINGEDEN_SOLDIER.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   NavmeshSettings ChimeraNavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60CA9BE5536BF701}" {
+     NavmeshFile "{135CCE3AF27E4575}TrainingEden/TRAININGEDEN_BTR.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{51C0EB083BCC3B31}TrainingEden/TRAIINGEDEN_loweres.nmn"
+    }
+   }
+  }
+ }
+ coords 6400 157.937 6403
+ {
+  CommentEntity {
+   coords 0 1 0
+   m_Comment "SCR_AIWorld: "\
+   "Configure navigation mesh"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 6400 157.906 6402
+}
+SCR_GameModeEditor GameMode_Editor_Full : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
+ coords 6400 157.891 6401
+ {
+  SCR_FactionManager "661B38426C66F99E" {
+   ID "56E685E92F1B7E7A"
+   Factions {
+    SCR_Faction "{56DEAC40D2DBC8B1}" : "{773EDB824997F2BA}Configs/Factions/5thGroup.conf" {
+     m_sFactionFlag "{286D2747BAC3DCDC}Configs/Factions/5tth.edds"
+     m_bCreateOnlyPredefinedGroups 1
+     m_aEntityCatalogs {
+      SCR_EntityCatalogMultiList "{5C68A0EE815FA292}" : "{B56E8B4D4B195559}Configs/EntityCatalog/US/Characters_EntityCatalog_US.conf" {
+      }
+      SCR_EntityCatalogMultiList "{5C9E82F29B327997}" : "{87B23804E2A93849}Configs/EntityCatalog/US/5thVehicle.conf" {
+      }
+      SCR_EntityCatalogMultiList "{5C68A0EE8B97CA50}" : "{4E70E7C4C2C17D4A}Configs/EntityCatalog/US/Groups_EntityCatalog_US.conf" {
+      }
+      SCR_EntityCatalog "{5C68A0EEB7DB3E84}" : "{0E4B62F186F97C43}Configs/EntityCatalog/US/WeaponTripod_EntityCatalog_US.conf" {
+      }
+      SCR_EntityCatalogMultiList "{5C68A0EEB3F124F9}" : "{4CAC1B6D5B35E0D1}Configs/EntityCatalog/US/5thArsenal.conf" {
+      }
+      SCR_EntityCatalog "{5C9EDDD37394AD40}" : "{0BF36EFF9FFAF92B}Configs/EntityCatalog/US/SupplyContainerItems_EntityCatalog_US.conf" {
+      }
+     }
+    }
+   }
+  }
+ }
+}

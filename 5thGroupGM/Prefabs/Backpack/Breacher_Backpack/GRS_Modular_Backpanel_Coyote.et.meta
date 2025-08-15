@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6A8E0AEF44AA5947}Prefabs/Backpack/Breacher_Backpack/GRS_Modular_Backpanel_Coyote.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,8 @@
+GenericEntity : "{C62D15B74E2FB00A}Prefabs/Backpack/Breacher_Backpack/GRS_Modular_Backpanel_Base.et" {
+ ID "65CD429FE6DF99B3"
+ components {
+  Bacon_6198EC294DEC63C0_VParachuteItemComponent "{661B3819BC7C2BF0}" {
+  }
+ }
+ coords 4775.755 28.162 11096.771
+}
